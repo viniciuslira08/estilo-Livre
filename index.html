@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estilo Livre — Barbearia</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-scissors"></i> Estilo Livre
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false"
+              aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HOME / BANNER ================= -->
+  <header id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">Seu estilo, do seu jeito</h1>
+          <p class="lead mb-4">
+            Cortes clássicos e modernos, barba feita com navalha e atendimento
+            que respeita o seu tempo.
+          </p>
+          <a href="#contato" class="btn btn-warning btn-lg px-4 fw-semibold">
+            Agendar horário
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= SOBRE NÓS ================= -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="img/banner.jpg" alt="Interior da barbearia Estilo Livre"
+               class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">Sobre Nós</h2>
+          <p class="text-muted">
+            A <strong>Estilo Livre</strong> nasceu da ideia de que barbearia não
+            precisa ser complicada. Aqui você encontra um ambiente descontraído,
+            profissionais experientes e um atendimento sem pressa.
+          </p>
+          <p class="text-muted">
+            Trabalhamos com produtos de qualidade, técnicas atualizadas e um
+            compromisso simples: você sai daqui com o corte que pediu — ou
+            melhor.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Atendimento com hora marcada</li>
+            <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Profissionais especializados</li>
+            <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Ambiente climatizado e confortável</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nossos Serviços</h2>
+        <p class="text-muted">Escolha o que combina com você</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/servico-corte.jpg" class="card-img-top"
+                 alt="Corte masculino">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Corte Masculino</h5>
+              <p class="card-text text-muted">
+                Corte na tesoura ou máquina, finalização com produtos e
+                alinhamento no seu estilo.
+              </p>
+              <p class="fw-bold text-warning mt-auto mb-2">R$ 45,00</p>
+              <a href="#contato" class="btn btn-outline-dark btn-sm">Agendar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/servico-barba.jpg" class="card-img-top"
+                 alt="Barba feita com navalha">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Barba na Navalha</h5>
+              <p class="card-text text-muted">
+                Modelagem, toalha quente e navalha para um acabamento preciso.
+              </p>
+              <p class="fw-bold text-warning mt-auto mb-2">R$ 35,00</p>
+              <a href="#contato" class="btn btn-outline-dark btn-sm">Agendar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/servico-combo.jpg" class="card-img-top"
+                 alt="Combo corte e barba">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Combo Corte + Barba</h5>
+              <p class="card-text text-muted">
+                O pacote completo: corte, barba e finalização com desconto.
+              </p>
+              <p class="fw-bold text-warning mt-auto mb-2">R$ 70,00</p>
+              <a href="#contato" class="btn btn-outline-dark btn-sm">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEPOIMENTOS (CAROUSEL) ================= -->
+  <section id="depoimentos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">O que dizem nossos clientes</h2>
+      </div>
+
+      <div id="carouselDepoimentos" class="carousel slide"
+           data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselDepoimentos"
+                  data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Depoimento 1"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos"
+                  data-bs-slide-to="1" aria-label="Depoimento 2"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos"
+                  data-bs-slide-to="2" aria-label="Depoimento 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <div class="bg-dark text-white text-center p-5">
+              <img src="img/depoimento-1.jpg" alt="Cliente Rafael"
+                   class="rounded-circle mb-3" width="90" height="90">
+              <p class="lead mb-2">
+                “Melhor barbearia que já frequentei. Atendimento pontual e
+                corte impecável.”
+              </p>
+              <small class="text-warning fw-semibold">— Rafael M.</small>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="bg-dark text-white text-center p-5">
+              <img src="img/depoimento-2.jpg" alt="Cliente Bruno"
+                   class="rounded-circle mb-3" width="90" height="90">
+              <p class="lead mb-2">
+                “Ambiente tranquilo e profissionais que entendem o que você
+                quer. Recomendo.”
+              </p>
+              <small class="text-warning fw-semibold">— Bruno S.</small>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="bg-dark text-white text-center p-5">
+              <img src="img/depoimento-3.jpg" alt="Cliente Diego"
+                   class="rounded-circle mb-3" width="90" height="90">
+              <p class="lead mb-2">
+                “Pedi um corte diferente e saí satisfeito. Virei cliente fixo.”
+              </p>
+              <small class="text-warning fw-semibold">— Diego A.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Fale com a gente</h2>
+        <p class="text-muted">Preencha o formulário e agende seu horário</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="bg-white p-4 rounded shadow-sm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome"
+                       placeholder="Seu nome completo" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email"
+                       placeholder="voce@email.com" required>
+              </div>
+
+              <div class="col-12">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5"
+                          placeholder="Conte o que você precisa..."
+                          required></textarea>
+              </div>
+
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-dark px-4">
+                  Enviar mensagem
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-semibold">
+        <i class="bi bi-scissors"></i> Estilo Livre
+      </p>
+      <p class="mb-2 small text-muted">
+        Rua das Tesouras, 123 — São Paulo/SP
+      </p>
+      <div class="mb-2">
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <small class="text-muted">&copy; 2026 Estilo Livre. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (necessário para navbar e carousel) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
