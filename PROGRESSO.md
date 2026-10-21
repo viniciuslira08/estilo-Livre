@@ -85,3 +85,9 @@ Registro diário do desenvolvimento do site da barbearia Estilo Livre (Bootstrap
 - Corrigi o posicionamento dos scripts no `index.html` (estavam fora do `<body>` e o Bootstrap carregava duas vezes)
 
 ---
+Se estiver igual, seguimos. As pendências que sobraram são:
+
+Testar em 375px, 768px e 1280px no DevTools
+Ativar o GitHub Pages
+Tirar as capturas de tela
+Enviar o link público
