@@ -35,7 +35,7 @@ section, header {
   .carousel-item .p-5 {
     padding: 2rem 1rem !important;
   }
-  .hero h1 {
+  .hero__titulo {
     font-size: 2rem;
   }
 }
