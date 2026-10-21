@@ -75,10 +75,13 @@ Registro diário do desenvolvimento do site da barbearia Estilo Livre (Bootstrap
 
 ---
 
-## Modelo para novos dias
+### 21/10/2026 (quarta-feira)
+- Instalei a Dart Sass (1.105.2) e removi o Ruby Sass antigo do sistema
+- Criei a pasta `scss` e copiei o `css/style.css` para `scss/style.scss`
+- Compilei com `sass --no-source-map scss/style.scss css/style.css`
+- Criei a pasta `js` e o arquivo `js/main.js`
+- Implementei o destaque automático do item do menu conforme a rolagem (IntersectionObserver)
+- Implementei o fechamento automático do menu hamburguer ao clicar em um item (mobile)
+- Corrigi o posicionamento dos scripts no `index.html` (estavam fora do `<body>` e o Bootstrap carregava duas vezes)
 
-### DD/MM/AAAA
-- O que eu terminei hoje
-- O que ficou pela metade
-- O que vou fazer amanhã
-- Problemas encontrados
+---
