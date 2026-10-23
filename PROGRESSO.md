@@ -4,26 +4,24 @@ Registro diário do desenvolvimento do site da barbearia Estilo Livre (Bootstrap
 
 ---
 
-## Legenda
-- [x] Concluído
-- [ ] Em andamento
-- [ ] Pendente
-
----
-
 ## Checklist geral do projeto
 
-- [x] Estrutura HTML5 + Bootstrap via CDN
-- [x] Navbar responsiva
-- [x] Seção Home (banner + CTA)
-- [x] Seção Sobre Nós
-- [x] Seção Serviços (cards)
-- [x] Seção Depoimentos (carousel)
-- [x] Formulário de Contato
-- [x] Ajustes de espaçamento e utilitários
-- [ ] Testes de responsividade no DevTools
-- [ ] Publicar no GitHub Pages
-- [ ] Capturas de tela para a entrega
+### Concluído
+
+- Estrutura HTML5 + Bootstrap via CDN
+- Navbar responsiva
+- Seção Home (banner + CTA)
+- Seção Sobre Nós
+- Seção Serviços (cards)
+- Seção Depoimentos (carousel)
+- Formulário de Contato
+- Ajustes de espaçamento e utilitários
+
+### Pendente
+
+- Testes de responsividade no DevTools
+- Publicar no GitHub Pages
+- Capturas de tela para a entrega
 
 ---
 
@@ -81,10 +79,11 @@ Registro diário do desenvolvimento do site da barbearia Estilo Livre (Bootstrap
 - Compilei com `sass --no-source-map scss/style.scss css/style.css`
 - Criei a pasta `js` e o arquivo `js/main.js`
 - Implementei o destaque automático do item do menu conforme a rolagem (IntersectionObserver)
-- Implementei o fechamento automático do menu hamburguer ao clicar em um item (mobile)
+- Implementei o fechamento automático do menu hambúrguer ao clicar em um item (mobile)
 - Corrigi o posicionamento dos scripts no `index.html` (estavam fora do `<body>` e o Bootstrap carregava duas vezes)
 
 ---
+
 ## 23/10/2026
 
 ### O que foi feito hoje
@@ -106,33 +105,33 @@ Registro diário do desenvolvimento do site da barbearia Estilo Livre (Bootstrap
 - GitHub Pages ainda não ativado.
 - Testes de responsividade ainda não realizados.
 
-### Próximos passos
+### Próximos passos (pendentes)
 
 #### Passo 1: ajustes no código
 
-- [ ] Trocar os títulos dos serviços de `h5` para `h3 class="card-title h5"` (corrige a hierarquia de títulos sem mudar o tamanho visual). Para conferir, buscar `</h5>` no `index.html`: sem resultados significa que a troca foi feita.
-- [ ] Confirmar que o logo da navbar tem o ícone de tesoura ao lado do texto "Estilo Livre".
-- [ ] Adicionar `id="formContato"` na tag `<form>` e uma `<div id="alertaContato" class="mt-3" role="status"></div>` logo após o `</form>`.
-- [ ] Adicionar no final do `js/main.js` o código que usa `preventDefault`, mostra o alerta "Mensagem enviada!" e limpa os campos.
-- [ ] Testar: formulário vazio mostra o aviso do navegador; formulário preenchido mostra o alerta verde e limpa os campos.
+- Trocar os títulos dos serviços de `h5` para `h3 class="card-title h5"` (corrige a hierarquia de títulos sem mudar o tamanho visual). Para conferir, buscar `</h5>` no `index.html`: sem resultados significa que a troca foi feita.
+- Confirmar que o logo da navbar tem o ícone de tesoura ao lado do texto "Estilo Livre".
+- Adicionar `id="formContato"` na tag `<form>` e uma `<div id="alertaContato" class="mt-3" role="status"></div>` logo após o `</form>`.
+- Adicionar no final do `js/main.js` o código que usa `preventDefault`, mostra o alerta "Mensagem enviada!" e limpa os campos.
+- Testar: formulário vazio mostra o aviso do navegador; formulário preenchido mostra o alerta verde e limpa os campos.
 
 #### Passo 2: varredura de arquivos antigos
 
-- [ ] Buscar `.jpg` no projeto inteiro (Ctrl+Shift+F) e corrigir qualquer referência a arquivo que não existe, principalmente `banner.jpg`.
-- [ ] Conferir se não sobrou nenhum `<img>` solto apontando para o banner, que é fundo da seção Home pelo CSS.
+- Buscar `.jpg` no projeto inteiro (Ctrl+Shift+F) e corrigir qualquer referência a arquivo que não existe, principalmente `banner.jpg`.
+- Conferir se não sobrou nenhum `<img>` solto apontando para o banner, que é fundo da seção Home pelo CSS.
 
 #### Passo 3: GitHub Pages
 
-- [ ] Ativar em Settings → Pages, com branch `main` e pasta root.
-- [ ] Aguardar o deploy (alguns minutos).
-- [ ] Abrir `https://viniciuslira08.github.io/estilo-Livre/` em aba anônima e conferir se banner, imagens e CSS carregam.
+- Ativar em Settings → Pages, com branch `main` e pasta root.
+- Aguardar o deploy (alguns minutos).
+- Abrir `https://viniciuslira08.github.io/estilo-Livre/` em aba anônima e conferir se banner, imagens e CSS carregam.
 
 #### Passo 4: documentação
 
-- [ ] Revisar o `PROGRESSO.md` (remover texto colado por engano, manter as entradas em ordem e registrar os dias de trabalho).
-- [ ] Revisar o `README.md` com nome do projeto, descrição, tecnologias, link do GitHub Pages e comando para compilar o Sass.
-- [ ] Compilar o Sass antes do commit: `sass --no-source-map scss/style.scss css/style.css`.
-- [ ] Fazer o commit final e o push, e conferir se o `git status` mostra "nothing to commit, working tree clean".
+- Revisar o `PROGRESSO.md` (remover texto colado por engano, manter as entradas em ordem e registrar os dias de trabalho).
+- Revisar o `README.md` com nome do projeto, descrição, tecnologias, link do GitHub Pages e comando para compilar o Sass.
+- Compilar o Sass antes do commit: `sass --no-source-map scss/style.scss css/style.css`.
+- Fazer o commit final e o push, e conferir se o `git status` mostra "nothing to commit, working tree clean".
 
 ### Testes da página (previstos para 24/10/2026)
 
@@ -140,31 +139,31 @@ Abrir o DevTools (F12), ativar o modo dispositivo e percorrer a página inteira 
 
 #### 375px (celular)
 
-- [ ] Menu hambúrguer aparece, abre e fecha, e os links levam às seções.
-- [ ] Cards de serviços empilham em uma coluna.
-- [ ] Imagem do Sobre Nós não fica grande demais nem estoura a tela.
-- [ ] Texto legível, sem rolagem horizontal.
-- [ ] Carousel funciona, com setas visíveis e fotos sem deformar.
-- [ ] Formulário ocupa a largura certa e os campos são fáceis de tocar.
+- Menu hambúrguer aparece, abre e fecha, e os links levam às seções.
+- Cards de serviços empilham em uma coluna.
+- Imagem do Sobre Nós não fica grande demais nem estoura a tela.
+- Texto legível, sem rolagem horizontal.
+- Carousel funciona, com setas visíveis e fotos sem deformar.
+- Formulário ocupa a largura certa e os campos são fáceis de tocar.
 
 #### 768px (tablet)
 
-- [ ] Navbar com comportamento coerente (menu recolhido ou expandido).
-- [ ] Cards de serviços organizados sem quebrar o layout.
-- [ ] Sobre Nós com imagem e texto bem distribuídos.
-- [ ] Carousel e formulário alinhados e centralizados.
+- Navbar com comportamento coerente (menu recolhido ou expandido).
+- Cards de serviços organizados sem quebrar o layout.
+- Sobre Nós com imagem e texto bem distribuídos.
+- Carousel e formulário alinhados e centralizados.
 
 #### 1280px (desktop)
 
-- [ ] Menu completo na navbar, com link ativo destacado ao rolar a página.
-- [ ] Três cards de serviços lado a lado e com a mesma altura.
-- [ ] Banner da Home com texto legível sobre a imagem.
-- [ ] Sobre Nós com imagem e texto lado a lado.
-- [ ] Carousel, formulário e rodapé alinhados.
+- Menu completo na navbar, com link ativo destacado ao rolar a página.
+- Três cards de serviços lado a lado e com a mesma altura.
+- Banner da Home com texto legível sobre a imagem.
+- Sobre Nós com imagem e texto lado a lado.
+- Carousel, formulário e rodapé alinhados.
 
 ### Entrega (24/10/2026)
 
-- [ ] Corrigir o que aparecer nos testes.
-- [ ] Commit e push finais.
-- [ ] Tirar até 10 capturas do site publicado: desktop, tablet, celular, menu aberto e formulário.
-- [ ] Enviar o link público do repositório e as capturas.
+- Corrigir o que aparecer nos testes.
+- Commit e push finais.
+- Tirar até 10 capturas do site publicado: desktop, tablet, celular, menu aberto e formulário.
+- Enviar o link público do repositório e as capturas.
