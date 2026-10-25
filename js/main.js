@@ -28,4 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 3. Formulário de contato: mostra confirmação e limpa os campos
+  const formContato = document.getElementById('formContato');
+  const alertaContato = document.getElementById('alertaContato');
+
+  if (formContato && alertaContato) {
+    formContato.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      alertaContato.innerHTML = `
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          Mensagem enviada! Em breve entraremos em contato.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+        </div>
+      `;
+
+      formContato.reset();
+    });
+  }
 });
