@@ -14,18 +14,18 @@ Site publicado: https://viniciuslira08.github.io/estilo-Livre/
 - Seção Home (banner + botão de agendamento)
 - Seção Sobre Nós
 - Seção Serviços (cards)
-- Seção Depoimentos (carousel)
+- Seção Depoimentos (carousel com setas amarelas)
 - Formulário de Contato com alerta de confirmação
 - Ajustes de espaçamento e utilitários
 - Sass (`scss/style.scss`) compilado para `css/style.css`
 - JavaScript (`js/main.js`)
 - Publicação no GitHub Pages
-
-### Pendente
-- Testes de responsividade no DevTools
+- Testes de responsividade em 375px, 768px e 1280px
 - Correção das setas do carousel sobre o texto dos depoimentos
 - Revisão do `README.md`
-- Commit e push finais
+
+### Pendente
+- Commit e push finais da documentação
 - Capturas de tela para a entrega
 
 ---
@@ -91,40 +91,24 @@ Site publicado: https://viniciuslira08.github.io/estilo-Livre/
 - Deploy concluído com sucesso em 47s
 - Conferi o site publicado em outro navegador: banner, imagens, CSS, carousel e rodapé carregam
 - Testei o formulário no site publicado: o alerta verde aparece e os campos são limpos
-- Observação para corrigir: no carousel, as setas ficam sobre o texto dos depoimentos
+- Revisei o `README.md` e enviei o commit com README e PROGRESSO (`5351851..0b248be`)
+- Corrigi as setas do carousel de depoimentos:
+  - Setas redondas no amarelo do site, com hover em amarelo mais claro
+  - Margem lateral no texto para as setas não encostarem nos depoimentos
+  - Bloco das setas movido para fora da media query de 576px
+  - Usei `!important` no `background-color` dos ícones para vencer a regra do Bootstrap
+  - Enviei ao GitHub o commit das setas (`0b248be..0ef84c5`) e conferi no site publicado
+- Testes de responsividade no DevTools:
+  - 375px: menu hamburguer, cards em uma coluna, imagem do Sobre Nós, carousel com os três depoimentos e formulário aprovados, sem rolagem horizontal
+  - 768px: menu recolhido (o Bootstrap só expande a partir de 992px), cards na mesma linha e Sobre Nós com imagem e texto lado a lado, aprovados
+  - 1280px: menu completo com link ativo destacado, banner legível, três cards lado a lado, carousel, formulário e rodapé aprovados
+- Observação visual aceita: a altura do carousel muda conforme o tamanho do texto de cada depoimento
 
 ---
 
 ## Próximos passos
 
-### Testes de responsividade (DevTools, F12)
-Ativar o modo dispositivo, percorrer a página inteira em cada largura e anotar os problemas antes de corrigir.
-
-#### 375px (celular)
-- Menu hamburguer aparece, abre e fecha, e os links levam às seções
-- Cards de serviços empilham em uma coluna
-- Imagem do Sobre Nós não fica grande demais nem estoura a tela
-- Texto legível, sem rolagem horizontal
-- Carousel funciona, com setas visíveis e fotos sem deformar
-- Formulário ocupa a largura certa e os campos são fáceis de tocar
-
-#### 768px (tablet)
-- Navbar com comportamento coerente (menu recolhido ou expandido)
-- Cards de serviços organizados sem quebrar o layout
-- Sobre Nós com imagem e texto bem distribuídos
-- Carousel e formulário alinhados e centralizados
-
-#### 1280px (desktop)
-- Menu completo na navbar, com link ativo destacado ao rolar a página
-- Três cards de serviços lado a lado e com a mesma altura
-- Banner da Home com texto legível sobre a imagem
-- Sobre Nós com imagem e texto lado a lado
-- Carousel, formulário e rodapé alinhados
-
 ### Entrega
-- Corrigir o que aparecer nos testes, incluindo as setas do carousel
-- Revisar o `README.md` (nome, descrição, tecnologias, link do Pages e comando do Sass)
-- Compilar o Sass: `sass --no-source-map scss/style.scss css/style.css`
-- Fazer o commit e o push finais e conferir se o `git status` mostra "nothing to commit, working tree clean"
+- Fazer o commit e o push finais da documentação e conferir se o `git status` mostra "nothing to commit, working tree clean"
 - Tirar até 10 capturas do site publicado: desktop, tablet, celular, menu aberto e formulário
 - Enviar o link público do repositório e as capturas
