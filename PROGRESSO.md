@@ -106,9 +106,11 @@ Site publicado: https://viniciuslira08.github.io/estilo-Livre/
 
 ---
 
-## Próximos passos
+### 25/10/2026 (domingo)
+- Adicionado favicon em SVG (tesoura) no `index.html`, removendo o erro 404 de `favicon.ico` no console
+- Commit e push do favicon e do `PROGRESSO.md` (commit `e3608f0`), com `git status` limpo
+- Tiradas 9 capturas de tela do site publicado: 3 em desktop (1280px), 1 em tablet (768px) e 5 em celular (375px), incluindo menu aberto e formulário com alerta de sucesso
+- Capturas salvas em uma pasta fora do projeto, para não aparecerem no `git status`
 
-### Entrega
-- Fazer o commit e o push finais da documentação e conferir se o `git status` mostra "nothing to commit, working tree clean"
-- Tirar até 10 capturas do site publicado: desktop, tablet, celular, menu aberto e formulário
-- Enviar o link público do repositório e as capturas
+---
+
